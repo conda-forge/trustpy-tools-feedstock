@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/yaniker/TrustPy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 3616d64609e36c4c9dac29065c1eb741a5681c736d9c7c6be3dd454c2ef66df2
   
 build:
   noarch: python
