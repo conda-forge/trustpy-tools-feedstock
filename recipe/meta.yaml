@@ -1,5 +1,5 @@
 {% set name = "trustpy-tools" %}
-{% set version = "2.0.7" %}
+{% set version = "2.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/yaniker/TrustPy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 9631e776298c3a61fd1f9fad6c69b6444e17f9ca591fa80e895fbba923f5fd1d
+  sha256: cf560e596645d2144f3b60b02882d6f2e7e5fc7096a549f7c7502ce21ce9c125
   
 build:
   noarch: python
