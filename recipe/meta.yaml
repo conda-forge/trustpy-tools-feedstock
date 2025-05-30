@@ -6,13 +6,13 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/yaniker/TrustPy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 789248fca70b1c7c4d93a5ef830317a4e52d1d345d819776d3ebc072c4a6eb75
+  url: https://github.com/TrustPy/TrustPy/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 83091402a7f4b7ea5e5f58d948b6686d62e8179ffb02a922731d070fd5337ac2
   
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -35,7 +35,7 @@ test:
     - pip check
     
 about:
-  home: https://github.com/yaniker/trustpy
+  home: https://github.com/TrustPy/TrustPy
   license: MIT
   license_file: LICENSE
   summary: 'Trustworthiness analysis and reliability metrics for predictive models.'
