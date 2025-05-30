@@ -3,7 +3,7 @@ About trustpy-tools-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/trustpy-tools-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/yaniker/trustpy
+Home: https://github.com/TrustPy/TrustPy
 
 Package license: MIT
 
