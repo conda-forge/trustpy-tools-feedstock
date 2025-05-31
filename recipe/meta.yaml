@@ -1,5 +1,5 @@
 {% set name = "trustpy-tools" %}
-{% set version = "2.0.11" %}
+{% set version = "2.0.11.post1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/TrustPy/TrustPy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 789248fca70b1c7c4d93a5ef830317a4e52d1d345d819776d3ebc072c4a6eb75
-  
+  sha256: 83091402a7f4b7ea5e5f58d948b6686d62e8179ffb02a922731d070fd5337ac2
+
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -33,7 +33,7 @@ test:
     - pip
   commands:
     - pip check
-    
+
 about:
   home: https://github.com/TrustPy/TrustPy
   license: MIT
@@ -43,9 +43,9 @@ about:
     TrustPy is a Python library that provides a set of tools for analyzing and quantifying 
     trustworthiness in predictive models. It works out-the-box with the AI/ML packages and is
     actively growing with the addition of new metrics and techniques.
-    
+
     To contribute or collaborate, please contact Erim Yanik (erimyanik@gmail.com).
-    
+
 extra:
   recipe-maintainers:
     - yaniker
