@@ -1,5 +1,5 @@
 {% set name = "trustpy-tools" %}
-{% set version = "2.0.12" %}
+{% set version = "2.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/TrustPy/TrustPy/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 29475e9ef59dabfede4cbc8a65fd8118c14c36d68a92a1f6d80efb0baffa10db
+  sha256: 0adafd8b371309b65c97f3a81d334f6e4f1337fb6e892fcb662ca18da3754fea
   
 build:
   noarch: python
@@ -38,11 +38,10 @@ about:
   home: https://github.com/TrustPy/TrustPy
   license: MIT
   license_file: LICENSE
-  summary: 'Trustworthiness analysis and reliability metrics for predictive models.'
+  summary: 'Provides pre-deployment trustworthiness analysis and reliability metrics for AI/ML models.'
   description: |
-    TrustPy is a Python library that provides a set of tools for analyzing and quantifying 
-    trustworthiness in predictive models. It works out-the-box with the AI/ML packages and is
-    actively growing with the addition of new metrics and techniques.
+    TrustPy is a production-ready Python package purpose-built for MLOps pipelines—enabling automated,
+    interpretable analysis of model trustworthiness and predictive reliability before deployment.
     
     To contribute or collaborate, please contact Erim Yanik (erimyanik@gmail.com).
     
